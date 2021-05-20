@@ -1,0 +1,57 @@
+.search {
+    width: 30rem;
+}
+
+#input-box {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 50px;
+}
+
+#search-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #F06C4E;
+    color: white;
+    border: none;
+}
+
+.food-item {
+    width: 15rem;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F8F7F5;
+
+}
+
+.cover-image {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#ingredients {
+    padding-left: 0;
+    list-style: none;
+}
+
+#notFound {
+    display: none;
+}
+
+#spinner {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .search {
+        width: 25rem;
+    }
+}
