@@ -49,7 +49,10 @@ const showData = foods => {
 // Search Button Event
 document.getElementById('search-btn').addEventListener('click', () => {
     const searchText = document.getElementById('input-box').value;
-    if (searchText) {
+    if (searchText.trim() == '') {
+        alert('Input should not be empty!')
+    }
+    else {
         document.getElementById('spinner').style.display = 'block'; // spinner show
         document.getElementById('foods-container').innerHTML = '';  // remove previous search food
         document.getElementById('notFound').style.display = 'none'; // not found msg
